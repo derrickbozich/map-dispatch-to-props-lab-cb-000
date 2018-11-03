@@ -1,4 +1,4 @@
-export const addRestaurant = (restaurant) => {
+export const addRestaurant = (restaurant, location) => {
   return {
     type: 'ADD_RESTAURANT',
     restaurant
