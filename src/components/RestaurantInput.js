@@ -9,9 +9,9 @@ export class RestaurantInput extends Component {
     location: ''
   }
 
-  handleOnNameChange = event => {
+  handleOnChange = event => {
     this.setState({
-      name: event.target.value
+      [event.target.name]: event.target.value
     });
   }
 
@@ -33,14 +33,14 @@ export class RestaurantInput extends Component {
         <p>
           <input
             type="text"
-            onChange={(event) => this.handleOnNameChange(event)}
+            onChange={(event) => this.handleOnChange(event)}
             id="name"
             placeholder="restaurant name" />
         </p>
         <p>
           <input
             type="text"
-            onChange={(event) => this.handleOnLocationChange(event)}
+            onChange={(event) => this.handleOnChange(event)}
             id="location"
             placeholder="location" />
         </p>
