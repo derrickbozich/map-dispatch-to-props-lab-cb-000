@@ -23,7 +23,7 @@ export class RestaurantInput extends Component {
 
   handleOnSubmit = event => {
     event.preventDefault();
-    this.props.addRestaurant(this.state.name)
+    this.props.addRestaurant(this.state.name, this.state.location)
     // add missing code
   }
 
