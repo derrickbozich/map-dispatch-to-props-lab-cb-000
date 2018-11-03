@@ -54,5 +54,7 @@ const mapDispatchToProps = dispatch => ({
   addRestaurant: (name,location) => dispatch({type: 'ADD_RESTAURANT', restaurant: {name, location }})
 })
 
+
+
 //connect this component by wrapping RestaurantInput below
 export default connect(null,mapDispatchToProps)(RestaurantInput)
