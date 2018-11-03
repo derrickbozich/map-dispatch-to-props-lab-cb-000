@@ -51,7 +51,7 @@ export class RestaurantInput extends Component {
 };
 
 const mapDispatchToProps = dispatch => ({
-  addRestaurant: restaurant => dispatch({type: 'ADD_RESTAURANT', restaurant})
+  addRestaurant: (name,location) => dispatch({type: 'ADD_RESTAURANT', restaurant: {name, location }})
 })
 
 //connect this component by wrapping RestaurantInput below
