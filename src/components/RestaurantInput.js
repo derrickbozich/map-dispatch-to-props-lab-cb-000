@@ -15,11 +15,6 @@ export class RestaurantInput extends Component {
     });
   }
 
-  handleOnLocationChange = event => {
-    this.setState({
-      [event.target.id]: event.target.value
-    });
-  }
 
   handleOnSubmit = event => {
     event.preventDefault();
